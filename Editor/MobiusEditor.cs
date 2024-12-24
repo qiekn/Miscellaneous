@@ -2,11 +2,11 @@ using UnityEngine;
 using UnityEditor;
 
 namespace ck.qiekn.Miscellanies {
-    [CustomEditor(typeof(MobiusRing))]
+    [CustomEditor(typeof(Mobius))]
     public class MobiusEditor : Editor {
         public override void OnInspectorGUI() {
             base.OnInspectorGUI();
-            var obj = target as MobiusRing;
+            var obj = target as Mobius;
 
             GUILayout.BeginHorizontal();
             if (GUILayout.Button("Generate")) { obj.GenerateMobiusStrip(); }

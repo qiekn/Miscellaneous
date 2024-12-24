@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace ck.qiekn.Miscellanies {
     [RequireComponent(typeof(MeshFilter), typeof(MeshRenderer))]
-    public class MobiusRing : MonoBehaviour {
+    public class Mobius : MonoBehaviour {
         [Range(3, 100)] public int uSegments = 50; // Around of Ring Segments
         [Range(2, 50)] public int vSegments = 10;  // Width Segemnts
         public float radius = 1.0f;                // 半径 
